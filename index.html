@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forside.css">
+    <title>Smykkemagasinet</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1>SMYKKEMAGASINET</h1>
+        </a>
+    </header>
+<!-- Hamburgermenu til mobil (jeg kunne ikke finde ud af at lave nestede menuer i burgeren, så derfor er der kun de tre links til artiklerne i den) -->
+    <nav id="ham_nav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+        <div id="ham_items">
+            <a href="genbrugssmykker.html">Genbrugssmykker</a>
+            <a href="diamanter.html">Diamanter</a>
+            <a href="smykkepleje.html">Smykkepleje</a>
+        </div>
+    </nav>
+<!-- Navigationsbar til bærbar/stationær -->
+    <nav id="bar_nav">
+        <div class="navigation_wrapper">
+            <div class="navigation_items">
+                <ul class="dropdown">
+                    <li><a href="#herrer">Herrer</a>
+                        <ul>
+                            <li><a href="#">Stilgalleri</a></li>
+                            <li><a href="#">Nye designere</a></li>
+                            <li><a href="#">Shopping</a></li>
+                            <li><a href="#">Kampagner</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#damer">Damer</a>
+                        <ul>
+                            <li><a href="#">Stilgalleri</a></li>
+                            <li><a href="#">Nye designere</a></li>
+                            <li><a href="#">Shopping</a></li>
+                            <li><a href="#">Kampagner</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#bæredygtighed">Bæredygtighed</a>
+                        <ul>
+                            <li><a href="#">Fairtrade</a></li>
+                            <li><a href="genbrugssmykker.html">Genbrugssmykker</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#materialer">Materialer</a>
+                        <ul>
+                            <li><a href="#">Allergi</a></li>
+                            <li><a href="#">Sølv</a></li>
+                            <li><a href="#">Guld</a></li>
+                            <li><a href="#">Platin</a></li>
+                            <li><a href="#smykkesten">Smykkesten</a>
+                                <ul>
+                                    <li><a href="diamanter.html">Diamanter</a></li>
+                                    <li><a href="#">Safirer</a></li>
+                                    <li><a href="#">Smaragder</a></li>
+                                </ul>
+                            </li>    
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#tutorials">Tutorials</a>
+                        <ul>
+                            <li><a href="#">Gør-det-selv</a></li>
+                            <li><a href="smykkepleje.html">Smykkepleje</a></li>
+                            <li><a href="#">Guide til ringstørrelse</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#events">Events</a>
+                        <ul>
+                            <li><a href="#">Messer</a></li>
+                            <li><a href="#">Kurser</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#søg">Søg</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="main_wrapper">
+            <article class="latest_articles">
+                <h2>Seneste artikler</h2>
+                <section class="article_box"> 
+                    <!-- Her ser jeg bort fra validatorens forslag om en section heading, ligeledes i linje 129.  -->
+                    <article class="article">
+                        <a href="genbrugssmykker.html">
+                            <img src="images/genbrug_1.jpg" alt="Genbrugssmykker" width="360">
+                            <h3>Genbrugssmykker</h3>
+                            <p>Sådan gør du de bedste fund</p>
+                        </a>
+                    </article>
+                    <article class="article">
+                        <a href="smykkepleje.html">
+                            <img src="images/pleje.jpg" alt="Pudsemidler" width="360">
+                            <h3>Smykkepleje</h3>
+                            <p>De bedste tips til flotte og rene smykker</p>
+                        </a>
+                    </article>
+                    <article class="article">
+                        <a href="diamanter.html">
+                            <img src="images/diamanter.jpg" alt="Diamanter" width="360">
+                            <h3>Diamanter</h3>
+                            <p>Naturlige eller ej?</p>
+                        </a>
+                    </article>
+                </section>
+            </article>
+            <article class="most_popular">
+                <h2>Mest læste</h2>
+                <section class="article_box">
+                    <article class="article">
+                        <img src="images/ringstr_2.jpg" alt="Ringmåler" width="360">
+                        <h3>Guide til din ringstørrelse</h3>
+                        <p>Sådan måler du din finger</p>
+                    </article>
+                    <article class="article">
+                        <img src="images/guld.jpg" alt="Guldsmykker" width="360">
+                        <h3>Alt om guld</h3>
+                        <p>Klar, karat, start!</p>
+                    </article>
+                    <article class="article">
+                        <img src="images/allergi_2.jpg" alt="Allergi" width="360">
+                        <h3>Allergi? Intet problem</h3>
+                        <p>Sådan finder du smykker, du kan tåle</p>
+                    </article>
+                </section>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_wrapper">
+            <ul class="footer_items">
+                <li>Om os</li>
+                <li>Ofte stillede spørgsmål</li>
+                <li>Nyhedsbrev</li>
+                <li>Kontakt</li>
+                <li id="social_media">
+                    <a href="https://www.facebook.com/" title="Facebook">
+                        <img class="icon" alt="Facebook" src="images/facebook_icon.png" width="30">
+                    </a>
+                    <a href="https://www.instagram.com/" title="Instagram">
+                        <img class="icon" alt="Instagram" src="images/instagram_icon.png" width="30">
+                    </a>
+                    <a href="https://www.pinterest.dk/" title="Pinterest">
+                        <img class="icon" alt="Pinterest" src="images/pinterest_icon.png" width="30">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

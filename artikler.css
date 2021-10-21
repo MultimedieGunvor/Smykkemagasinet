@@ -1,0 +1,309 @@
+/* CSS reset*/
+*,
+:after, 
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+html {
+    font-size: 100%;
+}
+/*------------General styling---------*/
+.navigation_wrapper, 
+.main_wrapper, 
+.footer_wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+}
+.main_wrapper {
+    margin-bottom: 70px;
+    max-width: 1000px;
+}
+body {
+    background-color: white;
+    font-family: 'Roboto', Verdana, sans-serif;
+    color: #2d2e43;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+p{
+    line-height: 1.5;
+}
+/*--------- Header and navigation---------*/
+header {
+    background-color: #2d2e43;
+    text-decoration: none;
+    font-size: 300%;
+    text-align: center;
+}
+h1{
+    color: white;
+    font-family: 'Fino Sans','Julius Sans One', 'Alegreya Sans SC', 'Bebas Neue', 'Roboto', sans-serif;
+}
+nav {
+    background-color: #5d5a7a;
+    font-variant-caps: small-caps;
+    font-size: larger;
+    padding: 15px 0 15px 0;
+}
+.navigation_wrapper {
+    color: white;
+}
+.navigation_items {
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown {
+    margin: 0;
+    padding: 0;
+    background-color: #5d5a7a;
+}
+.dropdown li {
+    position: relative;
+}
+.dropdown li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 7px;
+}
+.dropdown li ul {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #5d5a7a;
+}
+.dropdown li ul li a {
+    text-align: left;
+    color: white;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+.dropdown li ul li a:hover {
+    background-color: #2d2e43;
+}
+ul li:hover>ul {
+    display: block;
+}
+.dropdown li ul li ul {
+    left: 100%;
+    top: 0px;
+}
+/*--Jeg skelede til w3jar (https://www.w3jar.com/how-to-create-multi-level-dropdown-menu-with-pure-css/) da jeg lavede min dropwdown-menu.--*/
+#ham_nav {
+    width: 100%;
+    background: #5d5a7a;
+    display: none;
+}
+#hamburger {
+    display: none;
+}
+#ham_items {
+    display: flex;
+}
+#ham_items a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+/*------------Jeg fik inspiration til hamburgerbaren her: https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/-------*/
+
+/*--------Article styling-------*/
+h2 {
+    font-variant-caps: small-caps;
+    font-size: 200%;
+    text-align: center;
+    margin: 50px auto 10px auto;
+    color: #5d5a7a;
+}
+h3 {
+    font-size: 18pt;
+    color: #5d5a7a;
+}
+.subheading {
+    text-align: center;
+    padding-bottom: 10px;
+}
+/*--------Secondhand article--------*/
+.main_wrapper img {
+    width: 100%;
+}
+.damage img, .metal_and_hallmarks img, .gemstones_and_ask img {
+    width: 48%;
+}
+.introduction_secondhand {
+    padding: 50px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+.introduction_section {
+    margin: 30px 0;
+}
+.damage,
+.gemstones_and_ask {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.text_damage,
+.text_metal_and_hallmarks,
+.text_gemstones_and_ask {
+    width: 48%;
+}
+.metal_and_hallmarks {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text_metal,
+.text_hallmarks,
+.text_gemstones,
+.text_ask {
+    margin-bottom: 30px;
+}
+
+/*--------Jewelry care article-------*/
+.introduction_care {
+    padding: 30px 0;
+    width: 60%;
+}
+.wear {
+    width: 48%;
+}
+.dirt,
+.chemicals {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.chemicals {
+    flex-direction: row;
+}
+.text_dirt,
+.text_chemicals {
+    width: 48%;
+}
+.dirt img, .chemicals img {
+    width: 48%;
+}
+/*--------Diamond article--------*/
+.text_natural_diamonds {
+    width: 80%;
+    padding: 50px 0;
+}
+.synthetic_diamonds,
+.diamond_imitations {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.text_synthetic_diamonds {
+    width: 48%;
+}
+.diamond_imitations {
+    flex-direction: row;
+}
+.text_diamond_imitations {
+    width: 48%;
+}
+.synthetic_diamonds img, .diamond_imitations img {
+    width: 48%;
+}
+
+/*-------Footer--------*/
+footer {
+    background-color: #2d2e43;
+    color: white;
+    font-variant-caps: small-caps;
+    font-size: larger;
+    width: 100%;
+    /*position: fixed;*/
+    bottom: 0
+}
+.footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}    
+.icon {
+    margin-left: 10px;
+}
+@media only screen and (max-width: 768px) {
+    /*-----Header-----*/
+    header {
+        font-size: larger;
+    }
+    /*-----Navigation-----*/
+    #ham_nav {
+        display: block;
+    }
+    #ham_items a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #2d2e43;
+    }
+    #ham_nav label {
+        display: inline-block;
+        color: white;
+        background: #2d2e43;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    #ham_items {
+        display: none;
+    }
+    #ham_nav input:checked ~ #ham_items {display: block;}
+    #bar_nav {
+        display: none;
+    }
+    /*------Articles-----*/
+    .introduction_secondhand, .introduction_care {
+        padding: 10px 0;
+        width: 100%;
+    }
+    .damage, .gemstones_and_ask, .metal_and_hallmarks, 
+    .natural_diamonds, .synthetic_diamonds, .diamond_imitations,
+    .dirt, .chemicals, .wear {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        padding: 25px 0;
+    }
+    .text_damage, .text_metal_and_hallmarks, .text_gemstones_and_ask, 
+    .text_natural_diamonds, .text_synthetic_diamonds, .text_diamond_imitations,
+    .text_dirt, .text_chemicals {
+        width: 100%;
+    }
+    article img {
+        width: 100%;
+    }
+    /*--------Footer-------*/
+    .footer_items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_items li {
+        margin: 5px;
+    }
+}

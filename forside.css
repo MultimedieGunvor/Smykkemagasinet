@@ -1,0 +1,214 @@
+/* CSS reset*/
+*,
+:after, 
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+html {
+    font-size: 100%;
+}
+/*------------General styling---------*/
+.navigation_wrapper, 
+.main_wrapper, 
+.footer_wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+}
+.main_wrapper {
+    margin-bottom: 70px;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', Verdana, sans-serif;
+    color: #2d2e43;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/*--------- Header and navigation---------*/
+header {
+    background-color: #2d2e43;
+    text-decoration: none;
+    font-size: 300%;
+    text-align: center;
+    width: 100%;
+}
+h1{
+    color: white;
+    font-family: 'Fino Sans','Julius Sans One', 'Alegreya Sans SC', 'Bebas Neue', 'Roboto', sans-serif;
+}
+nav {
+    background-color: #5d5a7a;
+    font-variant-caps: small-caps;
+    font-size: larger;
+    padding: 15px 0 15px 0;
+}
+.navigation_wrapper {
+    color: white;
+}
+.navigation_items {
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown {
+    margin: 0;
+    padding: 0;
+    background-color: #5d5a7a;
+}
+.dropdown li {
+    position: relative;
+}
+.dropdown li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 7px;
+}
+.dropdown li ul {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #5d5a7a;
+}
+.dropdown li ul li a {
+    text-align: left;
+    color: white;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+.dropdown li ul li a:hover {
+    background-color: #2d2e43;
+}
+ul li:hover>ul {
+    display: block;
+}
+.dropdown li ul li ul {
+    left: 100%;
+    top: 0px;
+}
+/*--Jeg skelede til w3jar (https://www.w3jar.com/how-to-create-multi-level-dropdown-menu-with-pure-css/) da jeg lavede min dropwdown-menu.--*/
+#ham_nav {
+    width: 100%;
+    background: #5d5a7a;
+    display: none;
+}
+#hamburger {
+    display: none;
+}
+#ham_items {
+    display: flex;
+}
+#ham_items a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+/*------------Jeg fik inspiration til hamburgerbaren her: https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/-------*/
+
+/*---------Articles--------*/
+.article_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}    
+.article {
+    background-color: #e6e6e6;
+    height: 430px;
+    text-align: center;
+}
+h3 {
+    padding: 20px;
+    font-size: 18pt;
+    color: #5d5a7a;
+}
+p {
+    margin: 10px;
+    color: #2d2e43;
+    
+}
+h2 {
+    font-variant-caps: small-caps;
+    font-size: 200%;
+    text-align: center;
+    margin: 30px auto 15px auto;
+    color: #5d5a7a;
+}
+/*-------Footer--------*/
+footer {
+    background-color: #2d2e43;
+    color: white;
+    font-variant-caps: small-caps;
+    font-size: larger;
+    width: 100%;
+    bottom: 0
+}
+.footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}    
+.icon {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    /*-----Header-----*/
+    header {
+        font-size: larger;
+    }
+    /*-----Navigation-----*/
+    #ham_nav {
+        display: block;
+    }
+    #ham_items a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #2d2e43;
+    }
+    #ham_nav label {
+        display: inline-block;
+        color: white;
+        background: #2d2e43;
+        font-size: 1.2em;
+        padding: 10px;
+        /*float: right;*/
+    }
+    #ham_items {
+        display: none;
+    }
+    #ham_nav input:checked ~ #ham_items {display: block;}
+    #bar_nav {
+        display: none;
+    }
+    /*------Articles-----*/
+    .article {
+        margin-bottom: 20px;
+    }
+    /*--------Footer-------*/
+    .footer_items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_items li {
+        margin: 5px;
+    }
+}
